@@ -1,0 +1,15 @@
+
+# Beads work-graph DB (per-machine, lives at /var/<project>/beads/)
+.beads/
+
+# CCC VSCode extension runtime state (STO-WPL-120 / STO-WPL-121).
+# Host-local, per-window, rewritten every second while a window is
+# open — tracking it churns history and floods every agent turn with
+# a changed-file diff block. vscode-cmd/ is the agent->window req/res
+# trigger directory: runtime state for the same reason.
+.ccc/vscode-state.json
+.ccc/vscode-cmd/
+
+# Host-local CCC wiring (symlink to the CCC checkout, init run state)
+.ccc/source
+.ccc/onboard.state
